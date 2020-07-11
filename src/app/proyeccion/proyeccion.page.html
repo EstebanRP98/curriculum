@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>proyeccion</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="datos"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Aspiracion Laboral</strong><br>
+    
+    <ion-item>
+      <ion-input placeholder="Yo aspiro a ..." [(ngModel)]="data.proyeccion"></ion-input>
+    </ion-item>
+        
+    <ion-button expand="full" fill="outline" (click)="saludar()">Siguiente</ion-button>
+  </div>
+
+
+</ion-content>

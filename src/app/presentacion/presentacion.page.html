@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>presentacion</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="estudios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Datos Usuario:</strong><br>
+    <ion-item>
+      <ion-label position="floating" >Nombre:</ion-label>
+      <ion-input [value]="datapresentacion.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cedula:</ion-label>
+      <ion-input [value]="datapresentacion.cedula"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Exp Laboral 1:</ion-label>
+      <ion-input [value]="datapresentacion.explaboral1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Exp Laboral 2:</ion-label>
+      <ion-input [value]="datapresentacion.explaboral2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Proyeccion:</ion-label>
+      <ion-input [value]="datapresentacion.proyeccion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Titulo 3er:</ion-label>
+      <ion-input [value]="datapresentacion.titulo3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Titulo 4to:</ion-label>
+      <ion-input [value]="datapresentacion.titulo4"></ion-input>
+    </ion-item>
+    <ion-button expand="full" fill="outline" routerLink="/home">Inicio</ion-button>
+
+  </div>
+</ion-content>

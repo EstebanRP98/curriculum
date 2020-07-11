@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>estudios</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="proyeccion"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Titulos Universitarios:</strong><br>
+    <ion-item>
+      <ion-label position="floating">Titulo 3er Nivel de mayor importancia:</ion-label>
+      <ion-input placeholder="Titulo 3er nivel" [(ngModel)]="dataproyeccion.titulo3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Titulo 4to Nivel de mayor importancia:</ion-label>
+      <ion-input placeholder="Titulo 4to nivel" [(ngModel)]="dataproyeccion.titulo4"></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" fill="outline" (click)="saludar()">Siguiente</ion-button>
+  </div>
+</ion-content>

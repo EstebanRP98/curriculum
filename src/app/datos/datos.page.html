@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>datos</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Tu curriculum</strong><br>
+    
+    <ion-item>
+      <ion-label position="floating">Nombre:</ion-label>
+      <ion-input [(ngModel)]="person.name"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Cedula:</ion-label>
+      <ion-input [(ngModel)]="person.cedula"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Direccion:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha de nacimiento:</ion-label>
+      <ion-datetime displayFormat="DD MM YY" placeholder="dia/mes/año"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sexo:</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Femenino</ion-select-option>
+        <ion-select-option value="m">Masculino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tiene experiencia Laboral:</ion-label><br>
+      <ion-label position="floating">Si</ion-label><br>
+      <ion-toggle [(ngModel)]="exp"></ion-toggle>
+    </ion-item>
+
+    <ion-button expand="full" fill="outline" (click)="saludar()">Siguiente</ion-button>
+  </div>
+</ion-content>
