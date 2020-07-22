@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Camera} from '@ionic-native/camera/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 
 
@@ -32,6 +33,7 @@ import { Camera} from '@ionic-native/camera/ngx';
     ],
   providers: [
     StatusBar,
+    InAppBrowser,
     SplashScreen,
     AngularFirestore,
     Camera,

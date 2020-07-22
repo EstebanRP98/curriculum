@@ -14,6 +14,7 @@ export class EmpleoPage implements OnInit {
   empleo: Observable<any>;
 
   constructor(private empleosService: EmpleosService,  private route: ActivatedRoute, public router: Router) { }
+  
 
   async ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');

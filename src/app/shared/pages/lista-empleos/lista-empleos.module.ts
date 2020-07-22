@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ListaEmpleosPageRoutingModule } from './lista-empleos-routing.module';
 
 import { ListaEmpleosPage } from './lista-empleos.page';
+import { InappComponent } from '../../../components/inapp/inapp.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { ListaEmpleosPage } from './lista-empleos.page';
     IonicModule,
     ListaEmpleosPageRoutingModule
   ],
-  declarations: [ListaEmpleosPage]
+  declarations: [ListaEmpleosPage, InappComponent]
 })
 export class ListaEmpleosPageModule {}

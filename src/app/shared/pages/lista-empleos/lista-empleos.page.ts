@@ -11,13 +11,15 @@ import { Empleo } from '../../model/empleo';
   styleUrls: ['./lista-empleos.page.scss'],
 })
 export class ListaEmpleosPage implements OnInit {
-  
+  icono: "'logo-whatsapp'";
+  url: string;
   empleados: Observable<any[]>;
 
   constructor(private empleosService: EmpleosService, public router: Router) {}
 
   ngOnInit() {
     this.empleados = this.empleosService.getEmpleos();
+    this.url='https://www.google.com';
   }
 
   showEmpleo(id: any) {
